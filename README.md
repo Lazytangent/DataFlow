@@ -13,6 +13,7 @@ git clone git@github.com:Lazytangent/DataFlow.git
 ```
 
 ## Phase 0: Set Up
+### Backend
 
 1. `cd` into the `backend` directory.
 2. `npm install` the dependencies.
@@ -23,3 +24,9 @@ git clone git@github.com:Lazytangent/DataFlow.git
     psql -c "CREATE USER data_flow_app with PASSWORD 'password' CREATEDB;"
     ```
 5. Run `npx dotenv sequelize db:create` to create the database.
+
+### Frontend
+
+1. In another terminal, `cd` into the `frontend` directory.
+2. `npm install` the dependencies.
+3. 
