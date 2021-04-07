@@ -1,9 +1,12 @@
 import { fakeUsers } from '../../assets';
+import UserCard from '../UserCard';
 
 const UsersContainer = () => {
-  console.log(fakeUsers);
   return (
-    <h3>Placeholder for UsersContainer</h3>
+    <>
+      <h3>Placeholder for UsersContainer</h3>
+      {fakeUsers.map((user) => <UserCard key={user.id} user={user} />)}
+    </>
   );
 };
 
