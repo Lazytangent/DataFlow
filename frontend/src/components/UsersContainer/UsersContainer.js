@@ -1,3 +1,4 @@
+// Import hooks from 'react'. Which hook is meant for causing side effects?
 // Import hooks from 'react-redux'
 
 import styles from './UsersContainer.module.css';
@@ -6,6 +7,8 @@ import UserRow from '../UserRow';
 
 const UsersContainer = () => {
   // Declare variables from hooks
+
+  // Use a 'react' hook and cause a side effect
 
   return (
     <>
