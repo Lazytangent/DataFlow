@@ -1,12 +1,17 @@
+// Import hooks from 'react-redux'
+
+import styles from './UsersContainer.module.css';
 import { fakeUsers } from '../../assets';
 import UserCard from '../UserCard';
 
 const UsersContainer = () => {
+  // Declare variables from hooks
+
   return (
     <>
-      <h3>Placeholder for UsersContainer</h3>
-      <table>
-        <thead>
+      <h3 className={styles.heading}>Placeholder for UsersContainer</h3>
+      <table className={styles.table}>
+        <thead className={styles.thead}>
           <tr>
             <th>User No.</th>
             <th>User's Name</th>
