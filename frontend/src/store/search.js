@@ -15,6 +15,8 @@ const initialState = {
 // REDUCER
 const searchReducer = (state = initialState, action) => {
   switch (action.type) {
+    case SET_SEARCH:
+      return { ...state, queryString: action.query };
     default:
       return state;
   }

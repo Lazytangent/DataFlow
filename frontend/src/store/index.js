@@ -2,9 +2,11 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 import usersReducer from './users';
+import searchReducer from './search';
 
 const rootReducer = combineReducers({
   users: usersReducer,
+  search: searchReducer,
 });
 
 let enhancer;
