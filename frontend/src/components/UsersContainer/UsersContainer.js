@@ -2,7 +2,7 @@
 
 import styles from './UsersContainer.module.css';
 import { fakeUsers } from '../../assets';
-import UserCard from '../UserCard';
+import UserRow from '../UserRow';
 
 const UsersContainer = () => {
   // Declare variables from hooks
@@ -19,7 +19,7 @@ const UsersContainer = () => {
           </tr>
         </thead>
         <tbody>
-          {fakeUsers.map((user) => <UserCard key={user.id} user={user} />)}
+          {fakeUsers.map((user) => <UserRow key={user.id} user={user} />)}
         </tbody>
       </table>
     </>
