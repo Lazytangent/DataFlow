@@ -15,6 +15,10 @@ app.use(
   })
 );
 
+app.get('/api/test', (req, res) => {
+  res.json({ message: "Test route... for testing" });
+});
+
 app.use((_req, _res, next) => {
   const err = new Error('The requested resource couldn\'t be found.');
   err.title = 'Resource Not Found';
