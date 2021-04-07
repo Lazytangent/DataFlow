@@ -1,0 +1,5 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
