@@ -20,7 +20,7 @@ const UsersContainer = () => {
             <th>User's Email</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.tbody}>
           {fakeUsers.map((user) => <UserRow key={user.id} user={user} />)}
         </tbody>
       </table>

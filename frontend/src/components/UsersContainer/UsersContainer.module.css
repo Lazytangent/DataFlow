@@ -1,14 +1,22 @@
 .tableContainer {
-  width: fit-content;
+  width: 75%;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .table {
+  width: 100%;
   border: thin solid black;
   padding: 0.35rem;
   border-radius: 0.25rem;
 }
 
-.thead {
+.thead th {
   border-bottom: thin solid black;
+  padding: 0.35rem;
+}
+
+.tbody td {
+  padding: 0.35rem;
 }

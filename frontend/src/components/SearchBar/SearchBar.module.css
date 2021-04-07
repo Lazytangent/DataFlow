@@ -1,3 +1,9 @@
 .searchBar {
   padding: 0.35rem;
 }
+
+.div {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}

@@ -12,10 +12,9 @@ const SearchBar = () => {
   };
 
   return (
-    <>
-      <h3>Placeholder for SearchBar</h3>
-      <input className={styles.searchBar} type="search" value={queryString} onChange={updateSearch} />
-    </>
+    <div className={styles.div}>
+      <input placeholder="Search..." className={styles.searchBar} type="search" value={queryString} onChange={updateSearch} />
+    </div>
   );
 };
 
