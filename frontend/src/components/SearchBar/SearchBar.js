@@ -1,4 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
+
+import styles from './SearchBar.module.css';
 import { setSearch } from '../../store/search';
 
 const SearchBar = () => {
@@ -12,7 +14,7 @@ const SearchBar = () => {
   return (
     <>
       <h3>Placeholder for SearchBar</h3>
-      <input type="search" value={queryString} onChange={updateSearch} />
+      <input className={styles.searchBar} type="search" value={queryString} onChange={updateSearch} />
     </>
   );
 };

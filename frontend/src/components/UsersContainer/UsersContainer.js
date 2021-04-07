@@ -11,8 +11,7 @@ const UsersContainer = () => {
   // Use a 'react' hook and cause a side effect
 
   return (
-    <>
-      <h3 className={styles.heading}>Placeholder for UsersContainer</h3>
+    <div className={styles.tableContainer}>
       <table className={styles.table}>
         <thead className={styles.thead}>
           <tr>
@@ -25,7 +24,7 @@ const UsersContainer = () => {
           {fakeUsers.map((user) => <UserRow key={user.id} user={user} />)}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 

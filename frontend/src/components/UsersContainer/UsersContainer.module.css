@@ -1,0 +1,14 @@
+.tableContainer {
+  width: fit-content;
+  margin: auto;
+}
+
+.table {
+  border: thin solid black;
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+}
+
+.thead {
+  border-bottom: thin solid black;
+}
