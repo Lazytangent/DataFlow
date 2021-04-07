@@ -9,7 +9,7 @@ export const setSearch = (query) => ({
 
 // INITIAL STATE
 const initialState = {
-  queryString: null,
+  queryString: '',
 };
 
 // REDUCER
