@@ -1,7 +1,257 @@
 [
   {
     "name": "Alex Clough",
-    "email": "alexcl123@gmail.com",
-    "username": "CodingInRhythm"
+    "username": "CodingInRhythm",
+    "email": "alexcl123@gmail.com"
+  },
+  {
+    "name": "Alex Rodriguez",
+    "username": "alex-therookie",
+    "email": "alex.rodriguezsntg@gmail.com"
+  },
+  {
+    "name": "Alvin Huang",
+    "username": "huang-alvin",
+    "email": "huang.alvin.01@gmail.com"
+  },
+  {
+    "name": "Amanallah (Shahene) Chaouachi",
+    "username": "amanallahcode1",
+    "email": "achaouac@mail.ccsf.edu"
+  },
+  {
+    "name": "Benjamin (Ben) Stetzer",
+    "username": "bstetzer32",
+    "email": "benstetzer@gmail.com"
+  },
+  {
+    "name": "Bianca (B) Salinas",
+    "username": "B-Salinas",
+    "email": "b.salinas397@gmail.com"
+  },
+  {
+    "name": "Brent Arimoto",
+    "username": "brentarimoto",
+    "email": "brentarimoto@gmail.com"
+  },
+  {
+    "name": "Brian Xue",
+    "username": "bxue2",
+    "email": "brianxue007@gmail.com"
+  },
+  {
+    "name": "Caroline Mendez",
+    "username": "CaroMen",
+    "email": "caroline_mendez@baylor.edu"
+  },
+  {
+    "name": "Christian Cozma",
+    "username": "Christian-Cozma",
+    "email": "christianc.study2020@gmail.com"
+  },
+  {
+    "name": "Chukwuemeka (Chuks) Ota",
+    "username": "chuksota",
+    "email": "chuksota@gmail.com"
+  },
+  {
+    "name": "Daniel (Danny) Shoun",
+    "username": "danielshoun",
+    "email": "danielshoun@pm.me"
+  },
+  {
+    "name": "David Kim",
+    "username": "hye-kim",
+    "email": "davidckim22@gmail.com"
+  },
+  {
+    "name": "Earl Woo",
+    "username": "earlwoo",
+    "email": "earl.woo@gmail.com"
+  },
+  {
+    "name": "Elias Eichen",
+    "username": "EEichen",
+    "email": "eliprof@live.com"
+  },
+  {
+    "name": "Ellen Park",
+    "username": "pixzzels",
+    "email": "paarkellen@gmail.com"
+  },
+  {
+    "name": "Eunice Park",
+    "username": "euniceparkk",
+    "email": "euunicepaark@gmail.com"
+  },
+  {
+    "name": "Hector Crespo",
+    "username": "crespohector",
+    "email": "crespomhector@gmail.com"
+  },
+  {
+    "name": "Hieu Ma",
+    "username": "RiceandCat",
+    "email": "simshieu1@gmail.com"
+  },
+  {
+    "name": "Jack Radinger",
+    "username": "JackRadinger",
+    "email": "jackradinger98@gmail.com"
+  },
+  {
+    "name": "James Daniel",
+    "username": "jdaniel01",
+    "email": "professor4cob@outlook.com"
+  },
+  {
+    "name": "James Lentzsch",
+    "username": "scrub1737",
+    "email": "jrlentzsch@gmail.com"
+  },
+  {
+    "name": "James Sullivan",
+    "username": "bilbopicard",
+    "email": "jsullivan86@gmail.com"
+  },
+  {
+    "name": "Jane (jane?) Martin",
+    "username": "jemcodes",
+    "email": "martin.jane.ellis@gmail.com"
+  },
+  {
+    "name": "Jessica Thornton",
+    "username": "jmthorn",
+    "email": "jmthorn16@gmail.com"
+  },
+  {
+    "name": "John (Marshall) Diffey",
+    "username": "Marshall-Diffey",
+    "email": "marshalldiffey@yahoo.com"
+  },
+  {
+    "name": "John Witter",
+    "username": "John-Witter",
+    "email": "mrsolginski@gmail.com"
+  },
+  {
+    "name": "Jonathan Chan",
+    "username": "Jc-008",
+    "email": "jonathanchan.808@gmail.com"
+  },
+  {
+    "name": "Jorge Borges",
+    "username": "JDBorges187",
+    "email": "jdborges187@gmail.com"
+  },
+  {
+    "name": "Jose Solis Garcia",
+    "username": "Tonomatic",
+    "email": "antonysoly2217@gmail.com"
+  },
+  {
+    "name": "Joshua Devine",
+    "username": "JoshuaJDevine",
+    "email": "jd8386@gmail.com"
+  },
+  {
+    "name": "Joshua (Josh) Steinberg",
+    "username": "jps725",
+    "email": "jpsteinberg@gmail.com"
+  },
+  {
+    "name": "Keith Mellea",
+    "username": "keithmellea",
+    "email": "keithmellea@gmail.com"
+  },
+  {
+    "name": "Kevin Zheng",
+    "username": "jiezheng2020",
+    "email": "jiezheng2020@u.northwestern.edu"
+  },
+  {
+    "name": "Kyle Powers",
+    "username": "kpowers005",
+    "email": "k.powers005@gmail.com"
+  },
+  {
+    "name": "Laura Zailac",
+    "username": "lkzailac",
+    "email": "lkzailac@gmail.com"
+  },
+  {
+    "name": "Michael (Mike) Kelly",
+    "username": "mkellydevv",
+    "email": "m.kelly.devv@gmail.com"
+  },
+  {
+    "name": "Miguel Flores",
+    "username": "miguelalvinflores",
+    "email": "miguelalvinflores@gmail.com"
+  },
+  {
+    "name": "Natalie Oldroyd",
+    "username": "natoh19",
+    "email": "natoh18@gmail.com"
+  },
+  {
+    "name": "Nathaniel Cooke",
+    "username": "nathanieldcooke",
+    "email": "nathanield.cooke@gmail.com"
+  },
+  {
+    "name": "Noor (Lisa) Hoque",
+    "username": "Skulllady",
+    "email": "noorhoque45@gmail.com"
+  },
+  {
+    "name": "Nursultan (Nurs) Asanov",
+    "username": "nasanov",
+    "email": "asanoff.n@gmail.com"
+  },
+  {
+    "name": "Ondre Williams",
+    "username": "OndreWilliams",
+    "email": "ondre.williams.77@gmail.com"
+  },
+  {
+    "name": "Patrick Nusbaum",
+    "username": "patricknuttree",
+    "email": "patricknusbaum2016@gmail.com"
+  },
+  {
+    "name": "Qingwei (Vivian) Chen",
+    "username": "QCHEN0407",
+    "email": "qchen6060@gmail.com"
+  },
+  {
+    "name": "Renerose Dimatulac",
+    "username": "rsdimatulac",
+    "email": "rsdimatulac@gmail.com"
+  },
+  {
+    "name": "Schuler Small",
+    "username": "ssmall1",
+    "email": "schuler.small.10@gmail.com"
+  },
+  {
+    "name": "Tran Le",
+    "username": "trnle",
+    "email": "tranle97@gmail.com"
+  },
+  {
+    "name": "Vishaal Meduri",
+    "username": "vmeduri1",
+    "email": "vishaal.meduri@gmail.com"
+  },
+  {
+    "name": "Walter (Andrew) Moss",
+    "username": "aMoss5150",
+    "email": "andrewmossaudio@gmail.com"
+  },
+  {
+    "name": "Zane Preudhomme",
+    "username": "zpreudhomme",
+    "email": "zane@effarig.com"
   }
 ]
