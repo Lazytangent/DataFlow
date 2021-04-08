@@ -18,13 +18,16 @@ git clone git@github.com:Lazytangent/DataFlow.git
 1. `cd` into the `backend` directory.
 2. `npm install` the dependencies.
 3. Make an `.env` file based on the `.env.example` file given.
-4. Run this command to create the user based on the user defined in the `.env` file.
+4. Run this command to create the user based on the user defined in the `.env`
+   file.
     ```bash
     psql -c "CREATE USER data_flow_app with PASSWORD 'password' CREATEDB;"
     ```
 5. Run `npx dotenv sequelize db:create` to create the database.
-6. Run `npx dotenv sequelize db:migrate` to run the migrations and apply them to your local database.
-7. Run `npx dotenv sequelize db:seed:all` to run the seeder file and apply them to your local database.
+6. Run `npx dotenv sequelize db:migrate` to run the migrations and apply them to
+   your local database.
+7. Run `npx dotenv sequelize db:seed:all` to run the seeder file and apply them
+   to your local database.
 
 ### Frontend
 
