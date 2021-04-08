@@ -37,4 +37,4 @@ In both terminals, run `npm start` to start the servers.
 
 ## Guided Walkthrough
 
-Go to the [INSTRUCTIONS.md](INSTRUCTIONS.md) for the detailed walkthrough.
+Go to the [WALKTHROUGH.md](WALKTHROUGH.md) for the detailed walkthrough.
