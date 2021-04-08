@@ -105,6 +105,8 @@ To complete this portion of the data flow process, you'll need to dispatch a
 thunk to fetch the information and then render the information from the Redux
 store in a component.
 
+### Testing your components
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
