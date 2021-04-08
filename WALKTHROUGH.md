@@ -80,7 +80,35 @@ Things you'll want to remember:
     request-response cycle. Since this is an API route that just handles data,
     which method on the response should we use?
 
+### Testing your API route
+
+Once you've set up your API route, you can test it with [Postman] or [Insomnia].
+If you're testing with either in your actual application with authentication,
+make sure you remember to add the proper authentication tokens, which depends on
+what you're using in that app.
+
+## Phase 3: Redux
+
+To complete and test the Redux portion of the data flow process, you'll need to
+do a few things:
+
+* Create an action type constant
+* Create an action creator that returns an action (just a POJO)
+* Create a thunk that dispatches the action creator
+* Create a case that matches the action type and returns a new state
+
+### Testing your actions
+
+## Phase 4: React
+
+To complete this portion of the data flow process, you'll need to dispatch a
+thunk to fetch the information and then render the information from the Redux
+store in a component.
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
 [Phase 4: React]: #phase-4-react
+
+[Postman]: https://www.postman.com/
+[Insomnia]: https://insomnia.rest/
