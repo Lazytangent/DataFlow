@@ -40,7 +40,7 @@ describe('GET /api/users', () => {
       .get('/api/users')
       .expect(200)
 
-    expect(res.body).toEqual(expect.arrayContainer([
+    expect(res.body).toEqual(expect.arrayContaining([
       expect.objectContaining(fakeUser1),
       expect.objectContaining(fakeUser2),
     ]));
