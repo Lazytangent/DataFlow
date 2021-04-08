@@ -30,9 +30,11 @@ For this exercise, we will:
 * Create a thunk to `fetch` that API route and dispatch the data from the
 response to an action creator.
 * Create an action creator to apply the data it receives into the Redux store.
-* Create a constant to use as the type of the action creator and be the case in our reducer.
+* Create a constant to use as the type of the action creator and be the case in
+our reducer.
 * Create a case in the reducer.
-* Grab the information from the Redux store and render it in our React component.
+* Grab the information from the Redux store and render it in our React
+component.
 
 Things we will not be doing in this exercise:
 
