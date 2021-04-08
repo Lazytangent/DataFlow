@@ -44,14 +44,24 @@ Things we will not be doing in this exercise:
 
 The goals of this exercise are:
 
-* To familiarize you with the data-flow and how Redux sits between the React application in the frontend and the Express application in the backend.
-* To familiarize you with some of the patterns used when setting data into and getting data out of the Redux store.
+* To familiarize you with the data-flow and how Redux sits between the React
+application in the frontend and the Express application in the backend.
+* To familiarize you with some of the patterns used when setting data into and
+getting data out of the Redux store.
 
 ### NOTE
 
-You DO NOT have to follow this walkthrough exactly. Some people prefer working from the component to the Redux store to the backend, back to the Redux store, and then finally back to the component. Some people prefer working from the backend to the Redux store then to the component. Neither one is better than the other, it's just a personal preference in how you work.
+You DO NOT have to follow this walkthrough exactly. Some people prefer working
+from the component to the Redux store to the backend, back to the Redux store,
+and then finally back to the component. Some people prefer working from the
+backend to the Redux store then to the component. Neither one is better than the
+other, it's just a personal preference in how you work.
 
-That said, since this walkthrough is done from the backend with creating and testing the API route first, if you do want to use this walkthrough to work from the frontend with the component first, it is suggested to read through all of this walkthrough first before doing anything since it'll make more sense when all put together. Otherwise, code along!
+That said, since this walkthrough is done from the backend with creating and
+testing the API route first, if you do want to use this walkthrough to work from
+the frontend with the component first, it is suggested to read through all of
+this walkthrough first before doing anything since it'll make more sense when
+all put together. Otherwise, code along!
 
 ## Phase 2: Express
 
