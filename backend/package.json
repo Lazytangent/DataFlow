@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "dotenv-cli": "^4.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
