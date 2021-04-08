@@ -6,11 +6,11 @@
 
 const initialState = {};
 
-const UsersReducer = (state = initialState, action) => {
+const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state;
   }
 };
 
-export default UsersReducer;
+export default usersReducer;
