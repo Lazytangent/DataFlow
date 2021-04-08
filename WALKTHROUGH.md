@@ -65,6 +65,21 @@ all put together. Otherwise, code along!
 
 ## Phase 2: Express
 
+To complete the backend section of the data flow, you'll need to create the API
+route that you will have respond with the appropriate information. In the case
+of this example, this API endpoint will need to be a HTTP `GET` request to the
+route `/api/users`.
+
+Things you'll want to remember:
+
+* Since you're going to be querying data from the database, you'll need to
+    import the model that you'll be using.
+* Because there is a database interaction, there will need to be some kind of handler
+    that covers the asynchronous nature of database interactions.
+* An endpoint also needs to do something with a response to complete the
+    request-response cycle. Since this is an API route that just handles data,
+    which method on the response should we use?
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
