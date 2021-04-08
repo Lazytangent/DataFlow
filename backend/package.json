@@ -8,7 +8,6 @@
     "start": "per-env",
     "start:development": "nodemon -r dotenv/config ./bin/www",
     "start:production": "node ./bin/www",
-    "pretest": "cross-env NODE_ENV=test npm run migrate:reset",
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "migrate": "npx dotenv sequelize-cli db:migrate",
     "migrate:reset": "npx dotenv sequelize db:migrate:undo:all && npm run migrate"
