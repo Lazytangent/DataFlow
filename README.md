@@ -41,3 +41,12 @@ In both terminals, run `npm start` to start the servers.
 ## Guided Walkthrough
 
 Go to the [WALKTHROUGH.md](WALKTHROUGH.md) for the detailed walkthrough.
+
+## Things of note
+
+### `src/frontend/package.json`
+
+In the `src/frontend/package.json`, the `"proxy"` key is already set so that the
+frontend can forward routes that don't exist on the frontend to the backend.
+You'll want this key's value to match whichever port your local backend server
+is running on.
