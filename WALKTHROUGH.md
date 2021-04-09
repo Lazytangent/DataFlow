@@ -99,6 +99,14 @@ do a few things:
 
 ### Testing your actions
 
+Since the configuration for connecting the Redux store and the actions is already done in the `src/index.js` file, you can simply test the Redux thunk you've written for this exercise by running something similar in the browser.
+
+```javascript
+window.store.dispatch(window.userActions.getUsers());
+```
+
+Because we've attached the `store` and `userActions` to the window object during development, we can access those properties by keying into the window object and dispatching the action manually. You can test your thunks (and action creators) like so by making sure you've exported them properly from the store where they're defined and imported them into `src/index.js` and attached them properly to the window object.
+
 ## Phase 4: React
 
 To complete this portion of the data flow process, you'll need to dispatch a
