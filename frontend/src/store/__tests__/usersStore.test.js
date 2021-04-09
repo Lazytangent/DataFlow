@@ -22,12 +22,25 @@ const users = [
 // Defining types here since they don't get exported
 const SET_USERS = "users/SET_USERS";
 
-describe("async actions", () => {
+describe("The thunk", () => {
   afterEach(() => {
     fetchMock.restore();
   });
 
-  it("creates SET_USERS when fetching users has been done", () => {
+  it("should call GET /api/users at least once", () => {
+    fetchMock.getOnce("/api/users", {
+      body: users,
+      headers: { "Content-Type": "application/json" },
+    });
+
+    const store = mockStore({ users: {} });
+    store.dispatch(userActions.getUsers()).then(() => {
+      const result = fetchMock.called("/api/users");
+      expect(result).toBe(true);
+    });
+  });
+
+  it("should create SET_USERS when fetching users has been done", () => {
     fetchMock.getOnce("/api/users", {
       body: users,
       headers: { "Content-Type": "application/json" },
@@ -42,7 +55,7 @@ describe("async actions", () => {
   });
 });
 
-describe("usersReducer", () => {
+describe("The usersReducer", () => {
   it("should return the initial state", () => {
     expect(usersReducer(undefined, {})).toEqual({});
   });
