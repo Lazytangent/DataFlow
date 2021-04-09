@@ -4,6 +4,19 @@ This is meant as a refresher for walking you through the data flow in an
 Express-React-Redux application with a PostgreSQL database. (Essentially a PERN
 stack).
 
+In this exercise, we will:
+
+* Create a `GET` route to fetch our users from the database
+* Create a thunk that does the fetching from the API route
+* Create an action creator that sets our data from the thunk into the Redux
+    store
+* Create an action type as a constant (`const`) to prevent typos being an issue
+    in our reducer and actions
+* Create a case in our reducer that matches the action type we've created
+* Dispatch the thunk in our component as a side effect to fetch the data
+* Select the data we've put into the store with the fetch from the dispatched
+    thunk
+
 ## Table of Contents
 
 * [Phase 1: Planning]
@@ -65,7 +78,97 @@ all put together. Otherwise, code along!
 
 ## Phase 2: Express
 
+To complete the backend section of the data flow, you'll need to create the API
+route that you will have respond with the appropriate information. In the case
+of this example, this API endpoint will need to be a HTTP `GET` request to the
+route `/api/users`.
+
+Things you'll want to remember:
+
+* Since you're going to be querying data from the database, you'll need to
+    import the model that you'll be using.
+* Because there is a database interaction, there will need to be some kind of handler
+    that covers the asynchronous nature of database interactions.
+* An endpoint also needs to do something with a response to complete the
+    request-response cycle. Since this is an API route that just handles data,
+    which method on the response should we use?
+
+### Testing your API route
+
+**Make sure your backend server is running before you try
+testing the route!**
+
+Once you've set up your API route, you can test it with [Postman] or [Insomnia].
+If you're testing with either in your actual application with authentication,
+make sure you remember to add the proper authentication tokens, which depends on
+what you're using in that app.
+
+For this exercise, we'll send a `GET` request to
+`http://localhost:5000/api/users`, and since there's no authentication involved,
+there's nothing we'll need to add to our headers to get things working once the
+API route is written.
+
+## Phase 3: Redux
+
+To complete and test the Redux portion of the data flow process, you'll need to
+do a few things:
+
+* Create an action type constant
+* Create an action creator that returns an action (just a POJO)
+* Create a thunk that dispatches the action creator
+* Create a case that matches the action type and returns a new state
+
+### Testing your actions
+
+**Make sure both your frontend and backend servers are running before you try
+testing the actions!**
+
+Since the configuration for connecting the Redux store and the actions is
+already done in the `src/index.js` file, you can simply test the Redux thunk
+you've written for this exercise by running something similar in the browser.
+
+```javascript
+window.store.dispatch(window.userActions.getUsers());
+```
+
+Because we've attached the `store` and `userActions` to the window object during
+development, we can access those properties by keying into the window object and
+dispatching the action manually. You can test your thunks (and action creators)
+like so by making sure you've exported them properly from the store where
+they're defined and imported them into `src/index.js` and attached them properly
+to the window object.
+
+## Phase 4: React
+
+To complete this portion of the data flow process, you'll need to dispatch a
+thunk to fetch the information and then render the information from the Redux
+store in a component.
+
+### Testing your components
+
+**Make sure both your frontend and backend servers are running before you try to
+test your components!**
+
+To thoroughly test your components and make sure that they render the
+appropriate data every time, you'll want to test that your component works as
+intended:
+
+* After a refresh of the browser, to simulate a user coming to that page from
+    outside your site and with the Redux store starting off from the initial
+    state.
+* After coming from other pages from your app, where the Redux store may or may
+    not be pre-populated with information since there may be overlapping
+    information that you don't want to appear in the component you're working
+    on.
+
+Making sure that your component renders the correct information consistently, no
+matter what page your user is coming from is important to creating a smooth and
+predictable user experience.
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
 [Phase 4: React]: #phase-4-react
+
+[Postman]: https://www.postman.com/
+[Insomnia]: https://insomnia.rest/
