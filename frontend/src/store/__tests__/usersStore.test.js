@@ -23,16 +23,18 @@ const users = [
 const SET_USERS = "users/SET_USERS";
 
 describe("The thunk", () => {
+  beforeEach(() => {
+    fetchMock.getOnce("/api/users", {
+      body: users,
+      headers: { "Content-Type": "application/json" },
+    });
+  });
+
   afterEach(() => {
     fetchMock.restore();
   });
 
   it("should call GET /api/users at least once", () => {
-    fetchMock.getOnce("/api/users", {
-      body: users,
-      headers: { "Content-Type": "application/json" },
-    });
-
     const store = mockStore({ users: {} });
     store.dispatch(userActions.getUsers()).then(() => {
       const result = fetchMock.called("/api/users");
@@ -41,11 +43,6 @@ describe("The thunk", () => {
   });
 
   it("should create SET_USERS when fetching users has been done", () => {
-    fetchMock.getOnce("/api/users", {
-      body: users,
-      headers: { "Content-Type": "application/json" },
-    });
-
     const expectedActions = [{ type: SET_USERS, users }];
     const store = mockStore({ users: {} });
 
