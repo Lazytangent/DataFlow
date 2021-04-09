@@ -21,6 +21,12 @@ afterAll(async () => {
 });
 
 describe('GET /api/users', () => {
+  it('should exist', async () => {
+    await request(app)
+      .get('/api/users')
+      .expect(200)
+  });
+
   it('returns all the users in the database', async () => {
     const fakeUser1 = {
       name: "Demo Tester",
