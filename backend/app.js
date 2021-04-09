@@ -2,7 +2,9 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const helmet = require("helmet");
+
 const { User } = require("./db/models");
+const router = require('./routes');
 
 const app = express();
 
@@ -15,6 +17,8 @@ app.use(
     contentSecurityPolicy: false,
   })
 );
+
+app.use(router);
 
 app.get("/api/test", (_req, res) => {
   res.json({ message: "Test route... for testing" });
