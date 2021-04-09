@@ -122,6 +122,18 @@ store in a component.
 
 ### Testing your components
 
+To thoroughly test your components and make sure that they render the
+appropriate data every time, you'll want to test that your component works as
+intended:
+
+* After a refresh of the browser, to simulate a user coming to that page from
+    outside your site and with the Redux store starting off from the initial
+    state.
+* After coming from other pages from your app, where the Redux store may or may
+    not be pre-populated with information since there may be overlapping
+    information that you don't want to appear in the component you're working
+    on.
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
