@@ -4,6 +4,19 @@ This is meant as a refresher for walking you through the data flow in an
 Express-React-Redux application with a PostgreSQL database. (Essentially a PERN
 stack).
 
+In this exercise, we will:
+
+* Create a `GET` route to fetch our users from the database
+* Create a thunk that does the fetching from the API route
+* Create an action creator that sets our data from the thunk into the Redux
+    store
+* Create an action type as a constant (`const`) to prevent typos being an issue
+    in our reducer and actions
+* Create a case in our reducer that matches the action type we've created
+* Dispatch the thunk in our component as a side effect to fetch the data
+* Select the data we've put into the store with the fetch from the dispatched
+    thunk
+
 ## Table of Contents
 
 * [Phase 1: Planning]
