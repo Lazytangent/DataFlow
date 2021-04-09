@@ -134,6 +134,10 @@ intended:
     information that you don't want to appear in the component you're working
     on.
 
+Making sure that your component renders the correct information consistently, no
+matter what page your user is coming from is important to creating a smooth and
+predictable user experience.
+
 [Phase 1: Planning]: #phase-1-planning
 [Phase 2: Express]: #phase-2-express
 [Phase 3: Redux]: #phase-3-redux
