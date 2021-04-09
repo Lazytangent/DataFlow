@@ -34,7 +34,7 @@ describe('GET /api/users', () => {
       .expect(200)
   });
 
-  it('returns all the users in the database', async () => {
+  it('should return all the users in the database', async () => {
     const fakeUser1 = {
       name: "Demo Tester",
       email: "demo@aa.io",
