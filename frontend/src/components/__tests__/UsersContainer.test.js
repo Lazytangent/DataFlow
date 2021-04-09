@@ -17,6 +17,28 @@ const users = [
 ];
 
 describe("The UsersContainer component", () => {
+  describe("dispatches a thunk", () => {
+    beforeEach(() => {
+      fetchMock.getOnce("/api/users", {
+        body: users,
+        headers: { "Content-Type": "application/json" },
+      });
+
+      render(
+        <UsersContainer />
+      );
+    });
+
+    afterEach(() => {
+      fetchMock.restore();
+    });
+
+    test("and calls the GET /api/users API route", () => {
+      const result = fetchMock.called("/api/users");
+      expect(result).toBe(true);
+    });
+  });
+
   describe("renders", () => {
     beforeEach(() => {
       fetchMock.getOnce("/api/users", {
@@ -52,28 +74,6 @@ describe("The UsersContainer component", () => {
       const userTwoEmail = screen.getByText("test@user.io");
       expect(userOneEmail).toHaveTextContent("test@aa.io");
       expect(userTwoEmail).toHaveTextContent("test@user.io");
-    });
-  });
-
-  describe("dispatches a thunk", () => {
-    beforeEach(() => {
-      fetchMock.getOnce("/api/users", {
-        body: users,
-        headers: { "Content-Type": "application/json" },
-      });
-
-      render(
-        <UsersContainer />
-      );
-    });
-
-    afterEach(() => {
-      fetchMock.restore();
-    });
-
-    test("and calls the GET /api/users API route", () => {
-      const result = fetchMock.called("/api/users");
-      expect(result).toBe(true);
     });
   });
 });
