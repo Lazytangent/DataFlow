@@ -95,10 +95,18 @@ Things you'll want to remember:
 
 ### Testing your API route
 
+**Make sure your backend server is running before you try
+testing the route!**
+
 Once you've set up your API route, you can test it with [Postman] or [Insomnia].
 If you're testing with either in your actual application with authentication,
 make sure you remember to add the proper authentication tokens, which depends on
 what you're using in that app.
+
+For this exercise, we'll send a `GET` request to
+`http://localhost:5000/api/users`, and since there's no authentication involved,
+there's nothing we'll need to add to our headers to get things working once the
+API route is written.
 
 ## Phase 3: Redux
 
@@ -111,6 +119,9 @@ do a few things:
 * Create a case that matches the action type and returns a new state
 
 ### Testing your actions
+
+**Make sure both your frontend and backend servers are running before you try
+testing the actions!**
 
 Since the configuration for connecting the Redux store and the actions is
 already done in the `src/index.js` file, you can simply test the Redux thunk
@@ -134,6 +145,9 @@ thunk to fetch the information and then render the information from the Redux
 store in a component.
 
 ### Testing your components
+
+**Make sure both your frontend and backend servers are running before you try to
+test your components!**
 
 To thoroughly test your components and make sure that they render the
 appropriate data every time, you'll want to test that your component works as
