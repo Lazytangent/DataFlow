@@ -29,6 +29,18 @@ git clone git@github.com:Lazytangent/DataFlow.git
 7. Run `npx dotenv sequelize db:seed:all` to run the seeder file and apply them
    to your local database.
 
+#### Set up Backend Testing Environment
+
+1. Run this command to create the user that the tests will use to access the
+   database.
+    ```bash
+    psql -c "CREATE USER data_flow_test_app WITH PASSWORD 'password' CREATEDB;"
+    ```
+2. Run this command to create the test database.
+    ```bash
+    psql -c "CREATE DATABASE data_flow_test_db WITH OWNER data_flow_test_app;"
+    ```
+
 ### Frontend
 
 1. In another terminal, `cd` into the `frontend` directory.
