@@ -62,3 +62,5 @@ In the `src/frontend/package.json`, the `"proxy"` key is already set so that the
 frontend can forward routes that don't exist on the frontend to the backend.
 You'll want this key's value to match whichever port your local backend server
 is running on.
+
+You can read more here: https://create-react-app.dev/docs/proxying-api-requests-in-development
