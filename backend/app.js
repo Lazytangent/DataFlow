@@ -2,7 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const helmet = require("helmet");
-const asyncHandler = require('express-async-handler'):
+const asyncHandler = require('express-async-handler');
 
 const { User } = require("./db/models");
 const router = require('./routes');
