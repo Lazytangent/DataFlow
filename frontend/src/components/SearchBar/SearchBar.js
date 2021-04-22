@@ -5,7 +5,7 @@ import styles from './SearchBar.module.css';
 
 const SearchBar = () => {
   const history = useHistory();
-  const [queryString, setQueryString] = useState('');
+  const [queryString, setQueryString] = useState(new URLSearchParams(history.location.search).get('q') ?? '');
 
   const updateSearch = (e) => {
     setQueryString(e.target.value);
