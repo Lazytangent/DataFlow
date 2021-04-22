@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
+import { useSearch } from '../../context/SearchContext';
 
 const UserRow = ({ user }) => {
-  const queryString = useSelector((state) => state.search.queryString);
+  const { queryString } = useSearch();
 
   if (!(user.name.includes(queryString) || user.email.includes(queryString) || String(user.id).includes(queryString))) {
     return null;

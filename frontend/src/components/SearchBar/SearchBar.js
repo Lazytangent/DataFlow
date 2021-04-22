@@ -1,14 +1,11 @@
-import { useDispatch, useSelector } from 'react-redux';
-
 import styles from './SearchBar.module.css';
-import { setSearch } from '../../store/search';
+import { useSearch } from '../../context/SearchContext';
 
 const SearchBar = () => {
-  const dispatch = useDispatch();
-  const queryString = useSelector((state) => state.search.queryString);
+  const { queryString, setQueryString } = useSearch();
 
   const updateSearch = (e) => {
-    dispatch(setSearch(e.target.value))
+    setQueryString(e.target.value);
   };
 
   return (
