@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import SearchProvider from './context/SearchContext';
 import configureStore from './store';
 import * as userActions from './store/users';
 
@@ -19,9 +18,7 @@ if (process.env.NODE_ENV !== 'production') {
 const Root = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <SearchProvider>
-        <App />
-      </SearchProvider>
+      <App />
     </BrowserRouter>
   </Provider>
 );

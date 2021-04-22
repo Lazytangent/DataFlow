@@ -1,7 +1,7 @@
-import { useSearch } from '../../context/SearchContext';
+import { useLocation } from 'react-router-dom';
 
 const UserRow = ({ user }) => {
-  const { queryString } = useSearch();
+  const queryString = new URLSearchParams(useLocation().search).get('q') ?? '';
 
   if (!(user.name.includes(queryString) || user.email.includes(queryString) || String(user.id).includes(queryString))) {
     return null;
