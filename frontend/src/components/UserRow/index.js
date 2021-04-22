@@ -1,3 +1,1 @@
-import UserRow from './UserRow';
-
-export default UserRow;
+export { default } from './UserRow';
