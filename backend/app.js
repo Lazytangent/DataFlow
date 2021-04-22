@@ -26,6 +26,10 @@ app.get("/api/test", (_req, res) => {
 });
 
 // Write another api route here
+app.get("/api/users", asyncHandler(async (req, res) => {
+  const users = await User.findAll();
+  res.json(users);
+}));
 
 app.use((_req, _res, next) => {
   const err = new Error("The requested resource couldn't be found.");
