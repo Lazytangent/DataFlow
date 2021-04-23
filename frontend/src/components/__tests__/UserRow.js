@@ -1,10 +1,5 @@
-import { render, screen } from "@testing-library/react";
-import { Provider } from "react-redux";
-
-import configureStore from "../../store";
+import { render, screen } from "../../utils/test-utils";
 import UserRow from "../UserRow";
-
-const store = configureStore();
 
 describe("The UserRow component", () => {
   describe("renders", () => {
@@ -16,13 +11,11 @@ describe("The UserRow component", () => {
       };
 
       render(
-        <Provider store={store}>
-          <table>
-            <tbody>
-              <UserRow user={user} />
-            </tbody>
-          </table>
-        </Provider>
+        <table>
+          <tbody>
+            <UserRow user={user} />
+          </tbody>
+        </table>
       );
     });
 
