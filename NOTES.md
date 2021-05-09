@@ -13,3 +13,8 @@ Stuff you might want to know about.
 ## CSS Modules
 
 * https://github.com/css-modules/css-modules
+
+## Normalizing State Shape
+
+* https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape
+* https://redux.js.org/tutorials/essentials/part-6-performance-normalization#normalizing-data
