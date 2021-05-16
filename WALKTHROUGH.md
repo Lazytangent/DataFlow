@@ -175,6 +175,21 @@ module.exports = (sequelize, DataTypes) => {
 };
 ```
 
+After modifying your model and migration with the proper constaints (and
+possibly associations, as well), you can run the `db:migrate` command to apply
+the migration to your database.
+
+```sh
+npx dotenv sequelize db:migrate
+```
+
+For the purposes of this exercise, let's now also run the command to seed our
+Users table.
+
+```sh
+npx dotenv sequelize db:seed:all
+```
+
 ## Phase 3: Express
 
 To complete the backend section of the data flow, you'll need to create the API
