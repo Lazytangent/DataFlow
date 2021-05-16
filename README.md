@@ -25,10 +25,6 @@ git clone git@github.com:Lazytangent/DataFlow.git
     psql -c "CREATE USER data_flow_app with PASSWORD 'password' CREATEDB;"
     ```
 6. Run `npx dotenv sequelize db:create` to create the database.
-7. Run `npx dotenv sequelize db:migrate` to run the migrations and apply them to
-   your local database.
-8. Run `npx dotenv sequelize db:seed:all` to run the seeder file and apply them
-   to your local database.
 
 ### Frontend
 
