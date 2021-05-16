@@ -8,6 +8,7 @@ In this exercise, we will:
 
 * Create a User model and migration and apply it to the database
 * Create a `GET` route to fetch our users from the database
+* Create a reducer for this new feature/slice of state
 * Create a thunk that does the fetching from the API route
 * Create an action creator that sets our data from the thunk into the Redux
     store
@@ -230,6 +231,7 @@ do a few things:
 * Create an action type constant
 * Create an action creator that returns an action (just a POJO)
 * Create a thunk that dispatches the action creator
+* Create a reducer and add it to the store
 * Create a case that matches the action type and returns a new state
 
 ### Testing your actions
