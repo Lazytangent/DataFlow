@@ -94,6 +94,87 @@ npx sequelize model:generate --name User --attributes "name:string, \
     username:string, email:string"
 ```
 
+To set up your migration and model correctly, be sure to add the necessary
+validations now so, at the very least, you'll have the model and migration
+validations.
+
+For our User migration, update your migration file to this:
+
+```js
+'use strict';
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable('Users', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER,
+      },
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      email: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      username: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now'),
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now'),
+      }
+    });
+  },
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.dropTable('Users');
+  }
+};
+```
+
+For our User model, update your model file to this:
+
+```js
+"use strict";
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define(
+    "User",
+    {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+      },
+    },
+    {}
+  );
+  User.associate = function (models) {
+    // associations can be defined here
+  };
+  return User;
+};
+```
+
 ## Phase 3: Express
 
 To complete the backend section of the data flow, you'll need to create the API
