@@ -6,6 +6,7 @@ stack).
 
 In this exercise, we will:
 
+* Create a User model and migration and apply it to the database
 * Create a `GET` route to fetch our users from the database
 * Create a thunk that does the fetching from the API route
 * Create an action creator that sets our data from the thunk into the Redux
@@ -20,9 +21,10 @@ In this exercise, we will:
 ## Table of Contents
 
 * [Phase 1: Planning]
-* [Phase 2: Express]
-* [Phase 3: Redux]
-* [Phase 4: React]
+* [Phase 2: Database]
+* [Phase 3: Express]
+* [Phase 4: Redux]
+* [Phase 5: React]
 
 ## Phase 1: Planning
 
@@ -39,6 +41,7 @@ the page. There's already some magic working behind the scenes to filter out
 users if the search bar is in use, but that's not the concern of this exercise.
 For this exercise, we will:
 
+* Create a User model and migration
 * Create one backend API route to `GET` all the users.
 * Create a thunk to `fetch` that API route and dispatch the data from the
 response to an action creator.
@@ -76,7 +79,22 @@ the frontend with the component first, it is suggested to read through all of
 this walkthrough first before doing anything since it'll make more sense when
 all put together. Otherwise, code along!
 
-## Phase 2: Express
+## Phase 2: Database
+
+First, we'll set up a User model and migration to store our user data. In your
+project, you'll probably be only doing database setup at the very beginning of
+your project or as you start working on another MVP or general feature that
+needs another table.
+
+For the purposes of this exercise, run the following command to create a User
+model with the right columns:
+
+```sh
+npx sequelize model:generate --name User --attributes "name:string, \
+    username:string, email:string"
+```
+
+## Phase 3: Express
 
 To complete the backend section of the data flow, you'll need to create the API
 route that you will have respond with the appropriate information. In the case
@@ -108,7 +126,7 @@ For this exercise, we'll send a `GET` request to
 there's nothing we'll need to add to our headers to get things working once the
 API route is written.
 
-## Phase 3: Redux
+## Phase 4: Redux
 
 To complete and test the Redux portion of the data flow process, you'll need to
 do a few things:
@@ -138,7 +156,7 @@ like so by making sure you've exported them properly from the store where
 they're defined and imported them into `src/index.js` and attached them properly
 to the window object.
 
-## Phase 4: React
+## Phase 5: React
 
 To complete this portion of the data flow process, you'll need to dispatch a
 thunk to fetch the information and then render the information from the Redux
@@ -166,9 +184,10 @@ matter what page your user is coming from is important to creating a smooth and
 predictable user experience.
 
 [Phase 1: Planning]: #phase-1-planning
-[Phase 2: Express]: #phase-2-express
-[Phase 3: Redux]: #phase-3-redux
-[Phase 4: React]: #phase-4-react
+[Phase 2: Database]: #phase-2-database
+[Phase 3: Express]: #phase-3-express
+[Phase 4: Redux]: #phase-4-redux
+[Phase 5: React]: #phase-5-react
 
 [Postman]: https://www.postman.com/
 [Insomnia]: https://insomnia.rest/
