@@ -2,9 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const helmet = require("helmet");
-const asyncHandler = require('express-async-handler');
 
-const { User } = require("./db/models");
 const router = require('./routes');
 
 const app = express();
@@ -24,8 +22,6 @@ app.use(router);
 app.get("/api/test", (_req, res) => {
   res.json({ message: "Test route... for testing" });
 });
-
-// Write another api route here
 
 app.use((_req, _res, next) => {
   const err = new Error("The requested resource couldn't be found.");
