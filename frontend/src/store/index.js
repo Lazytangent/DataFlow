@@ -1,10 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
-import usersReducer from './users';
+// Import your reducers here
 
 const rootReducer = combineReducers({
-  users: usersReducer,
+  // Add your reducers to your store here
 });
 
 let enhancer;
