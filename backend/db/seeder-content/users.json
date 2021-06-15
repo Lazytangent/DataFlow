@@ -10,14 +10,14 @@
     "username": "alexhertel87"
   },
   {
+    "name": "Amber Bancroft",
+    "email": "amberbancroft2@gmail.com",
+    "username": "amberbancroft"
+  },
+  {
     "name": "Anthony (Tony) Costanza",
     "email": "anthonycost99@gmail.com",
     "username": "AnthonyCost"
-  },
-  {
-    "name": "Anthony Huynh",
-    "email": "anthonyhuynh123@gmail.com",
-    "username": "Khiienu"
   },
   {
     "name": "Anthony Martin",
@@ -125,19 +125,24 @@
     "username": "IrinaAmzashvili"
   },
   {
-    "name": "Ivory Smith",
-    "email": "smith.ivory94@gmail.com",
-    "username": "St-Ives94"
-  },
-  {
     "name": "Jason Leatiota",
     "email": "jasole2007@yahoo.com",
     "username": "jasole1983"
   },
   {
+    "name": "Jefferson (Jeff) Lopez Garcia",
+    "email": "jeffersongarcia1599@gmail.com",
+    "username": "JeffersonGarcia15"
+  },
+  {
     "name": "Jia Cui",
     "email": "cuijiajanae@gmail.com",
     "username": "JanaeCui"
+  },
+  {
+    "name": "Jimson Ma",
+    "email": "ma.jimson@gmail.com",
+    "username": "jimsonm"
   },
   {
     "name": "Joe Zhang",
@@ -158,11 +163,6 @@
     "name": "Johnn (JC) Vasquez",
     "email": "j.christian.vasquez@gmail.com",
     "username": "johnnvas"
-  },
-  {
-    "name": "Jordan Godkin",
-    "email": "bteabusiness@protonmail.ch",
-    "username": "BrimmingTeacup"
   },
   {
     "name": "Jordyn Sechrist",
@@ -205,6 +205,11 @@
     "username": "KyleHere"
   },
   {
+    "name": "Logan Frye",
+    "email": "loganfrye714@gmail.com",
+    "username": "Loganfrye714"
+  },
+  {
     "name": "Matthew (Matt) Melendez",
     "email": "matthewemelendez@gmail.com",
     "username": "melendezmatt"
@@ -235,9 +240,9 @@
     "username": "rzh150030"
   },
   {
-    "name": "Ryan Deame",
-    "email": "ryandeame@gmail.com",
-    "username": "3deame"
+    "name": "Richard (Rich) Supe",
+    "email": "rsupe1993@aol.com",
+    "username": "Rich-Supe"
   },
   {
     "name": "Shane Wilkey",
@@ -248,11 +253,6 @@
     "name": "Taylor Hogan",
     "email": "taylorb.hogan@gmail.com",
     "username": "taylorbhogan"
-  },
-  {
-    "name": "Taylor Pell",
-    "email": "taylor@htmlartist.net",
-    "username": "Taylor-H"
   },
   {
     "name": "Timothy (Tim) Wieser",
@@ -270,13 +270,13 @@
     "username": "victoriatarane"
   },
   {
-    "name": "Wentao (Marvin) Ma",
-    "email": "marvinma.mw@gmail.com",
-    "username": "marvinma-mw"
-  },
-  {
     "name": "Wilson Huang",
     "email": "whuang3015@gmail.com",
     "username": "PotatoAim11518"
+  },
+  {
+    "name": "Zach Yu",
+    "email": "zach.m.yu@gmail.com",
+    "username": "zachmyu"
   }
 ]
