@@ -176,7 +176,7 @@ module.exports = (sequelize, DataTypes) => {
 };
 ```
 
-After modifying your model and migration with the proper constaints (and
+After modifying your model and migration with the proper constraints (and
 possibly associations, as well), you can run the `db:migrate` command to apply
 the migration to your database.
 
