@@ -1,6 +1,7 @@
 // Import hooks from 'react'. Which hook is meant for causing side effects?
 // Import hooks from 'react-redux'
 
+// Import the thunk creator
 import styles from './UsersContainer.module.css';
 import { fakeUsers } from '../../assets';
 import UserRow from '../UserRow';

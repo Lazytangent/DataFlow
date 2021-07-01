@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 
 // Import your reducers here
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   // Add your reducers to your store here
 });
 

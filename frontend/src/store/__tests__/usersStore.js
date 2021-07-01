@@ -20,7 +20,7 @@ const users = [
 ];
 
 // Defining types here since they don't get exported
-const SET_USERS = "users/SET_USERS";
+const SET_USERS = "users/setUsers";
 
 describe("The thunk", () => {
   beforeEach(() => {
