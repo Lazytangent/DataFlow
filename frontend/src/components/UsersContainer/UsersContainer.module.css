@@ -2,6 +2,9 @@
   width: 75%;
   margin: auto;
   display: flex;
+  opacity: 0.55;
+  border-radius: 0.35rem;
+  background-color: #fefefe;
   justify-content: center;
 }
 
