@@ -2,15 +2,15 @@
   width: 75%;
   margin: auto;
   display: flex;
-  opacity: 0.55;
   border-radius: 0.35rem;
-  background-color: #fefefe;
   justify-content: center;
+
+  backdrop-filter: grayscale(0.5) blur(5px);
+  -webkit-backdrop-filter: grayscale(0.5) blur(5px);
 }
 
 .table {
   width: 100%;
-  border: thin solid black;
   padding: 0.35rem;
   border-radius: 0.25rem;
 }
